@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Na_to_K <= 14.638\ngini = 0.726\nsamples = 92\nvalue = [17, 16, 16, 31, 60]\nclass = drugY", fillcolor="#f8caee"] ;
+1 [label="BP <= 0.5\ngini = 0.725\nsamples = 49\nvalue = [17, 16, 16, 31, 0]\nclass = drugX", fillcolor="#d4d3f9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 53.0\ngini = 0.5\nsamples = 22\nvalue = [17, 16, 0, 0, 0]\nclass = drugA", fillcolor="#fdf8f3"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 4 ;
+5 [label="Cholesterol <= 0.5\ngini = 0.449\nsamples = 27\nvalue = [0, 0, 16, 31, 0]\nclass = drugX", fillcolor="#a19ff2"] ;
+1 -> 5 ;
+6 [label="(...)", fillcolor="#C0C0C0"] ;
+5 -> 6 ;
+19 [label="(...)", fillcolor="#C0C0C0"] ;
+5 -> 19 ;
+20 [label="gini = 0.0\nsamples = 43\nvalue = [0, 0, 0, 0, 60]\nclass = drugY", fillcolor="#e539c0"] ;
+0 -> 20 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
